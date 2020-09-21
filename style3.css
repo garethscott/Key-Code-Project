@@ -1,0 +1,229 @@
+body { 
+ margin: 0;
+ font-family: helvetica;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+}
+.content {
+    width: 90%;
+    height: 550px;
+    border-top: 2px solid rgb(255, 254, 254);
+}
+.heading {
+    width: 100%;
+    height: 50px;
+}
+.instruction-heading {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 19px;
+    color: rgb(255, 254, 254);
+}
+.keyboard-title {
+    margin-top: -5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(255, 254, 254);
+}
+.big-num {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#heading-which {
+    font-size: 200px;
+    margin: 0;
+    margin-top: 10px;
+    color: rgb(255, 254, 254);
+}
+.col-2 {
+    width: 100%;
+    height: 260px;
+}
+.box {
+    width: 100%;
+    height: 80px;
+}
+.num-head {
+    margin-top: 20px;
+    width: 100%;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid rgb(255, 254, 254);
+    border-bottom: 0.5px solid rgb(255, 254, 254);
+}
+.number-heading {
+    font-size: 8px;
+    color: rgb(255, 255, 255);
+}
+.value-heading {
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: -20;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+.value-style {
+    font-size: 40px;
+}
+.value-box {
+    margin-top: 0px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+}
+.footer {
+    margin-top: 40px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: flex-end;
+    border-top: 2px solid white;
+}
+.circle {
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+.credit {
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    height: 13px;
+    margin: 0;
+    margin-left: 5px;
+}
+.code {
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* IPHONE-X FORMAT */
+@media only screen and (min-height: 667px) and (max-width: 450px) {
+    .content {
+        height: 600px;
+    }
+    .big-num {
+        height: 200px;  
+    }
+    #heading-which {
+        font-size: 260px;
+    }
+}
+
+/* MOBILE LANDSCAPE FORMAT */
+@media only screen and (min-width: 450px) and (max-width: 825px) {
+    .wrapper {
+       align-items: flex-start;
+       overflow-y: scroll;
+       padding-top: 30px;
+    }
+    content {
+        margin-top: 50px;
+    }
+}
+
+/* IPAD FORMAT */
+@media only screen and (min-width: 825px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(156, 227, 250);
+        
+    }
+    .wrapper {
+        width: 500px;
+        height: 700px;
+        border-radius: 30px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .content {
+        height: 635px;
+        margin-top: 35px;
+    }
+    .instruction-heading {
+        margin-top: 7px;
+        margin-bottom: 7px;
+        font-size: 25px;
+    }
+    .keyboard-title {
+        margin-top: 0px;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .big-num {
+        width: 100%;
+        height: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -15px;
+    }
+    #heading-which {
+        font-size: 400px;
+        margin: 0;
+        color: rgb(255, 255, 255);
+    }
+    .value-boxes {
+        width: 100%;
+        height: 175px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .num-head {
+        height: 25px;
+        border-top: 3px solid rgb(255, 254, 254);
+        border-bottom: 1px solid rgb(255, 254, 254);
+    }
+    .number-heading {
+        font-size: 12px;
+    }
+    .value-style {
+        font-size: 55px;
+    }
+    .box {
+        width: 30.5%;
+        height: 175px;
+        margin: 0;
+        border-bottom: 3px solid rgb(255, 255, 255);
+    }
+    .value-box {
+        margin-top: 25px;
+        height: 50px;
+        font-size: 75px;
+    }
+    .footer {
+        border: none;
+        margin-top: -70px;
+    }
+    .circle {
+        width: 15px;
+        height: 15px;
+    }
+    .credit {
+        font-size: 12px;
+    }
+}
