@@ -17,13 +17,39 @@ body {
 }
 .heading {
     width: 100%;
-    height: 50px;
+    height: 55px;
+    position: relative;
 }
 .instruction-heading {
     margin-top: 7px;
     margin-bottom: 7px;
     font-size: 19px;
     color: rgb(255, 254, 254);
+}
+/* .arrow {
+    height: 40%;
+    position: absolute;
+    left: 263px;
+    top: 30px;
+    margin-right: 10px;
+    transform: rotate(-90deg);
+} */
+.arrow {
+    height: 40%;
+    position: absolute;
+    right: 40px;
+    bottom: 33px;
+    margin-right: 10px;
+}
+.key-input {
+    width: 5%;
+    height: 35%;
+    position: absolute;
+    right: 0px;
+    bottom: 32px;
+}
+.press {
+    display: none;
 }
 .keyboard-title {
     margin-top: -5px;
@@ -116,6 +142,17 @@ body {
     font-style: normal;
     font-weight: 800;
 }
+
+/* ADDING THE ARROW LOGO CHANGE - VERT TO HOZ */
+/* @media only screen and (min-width: 325px) and (min-height: 569px) {
+    .arrow {
+        height: 40%;
+        position: absolute;
+        right: 40px;
+        bottom: 33px;
+        margin-right: 10px;
+    }
+} */
 
 /* IPHONE-X FORMAT */
 @media only screen and (min-height: 667px) and (max-width: 450px) {
@@ -225,5 +262,21 @@ body {
     }
     .credit {
         font-size: 12px;
+    }
+}
+
+/* BEYOND IPAD FORMAT */
+@media only screen and (min-width: 1025px) {
+    .enter {
+        display: none;
+    }
+    .press {
+        display: inline;
+    }
+    .key-input {
+        display: none;
+    }
+    .arrow {
+        display: none;
     }
 }
